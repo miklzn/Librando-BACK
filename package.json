@@ -1,0 +1,34 @@
+{
+  "name": "librando-back",
+  "version": "1.0.0",
+  "description": "Backend Librando",
+  "scripts": {
+    "start": "concurrently 'npm run server' 'npm run client'",
+    "server": "nodemon api/server.js",
+    "client": "react-scripts start",
+    "build": "react-scripts build"
+  },
+  "proxy": "http://localhost:3001",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Merssith/Librando-BACK.git"
+  },
+  "author": "Equipo 3",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Merssith/Librando-BACK/issues"
+  },
+  "homepage": "https://github.com/Merssith/Librando-BACK#readme",
+  "dependencies": {
+    "axios": "^1.1.3",
+    "bcrypt": "^5.1.0",
+    "cookie-parser": "^1.4.6",
+    "express": "^4.18.2",
+    "jsonwebtoken": "^8.5.1",
+    "sequelize": "^6.25.3"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.20",
+    "volleyball": "^1.5.1"
+  }
+}
